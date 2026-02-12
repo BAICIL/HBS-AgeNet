@@ -1,4 +1,4 @@
-# Predicting Chronological Age based on 3D Brain MRI Images 
+# DeepMRIAge: Predicting Chronological Age based on 3D Brain MRI Images 
 ### Javad Sohankar (j.sohankar@bannerhealth.com)
 ### Banner Alzheimer's Institute, Phoenix, Arizona, US
 
