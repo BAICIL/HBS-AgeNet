@@ -1,5 +1,5 @@
-# HBS-AgeNet: HeadBrainSkull-AgeNet
-# Predicting Chronological Age based on 3D Brain MRI Images from Head, Brain and Skull  
+# HBS-AgeNet (HeadBrainSkull-AgeNet)
+## Predicting Chronological Age based on 3D Brain MRI Images from Head, Brain and Skull  
 ### Javad Sohankar (j.sohankar@bannerhealth.com)
 ### Banner Alzheimer's Institute, Phoenix, Arizona, US
 
