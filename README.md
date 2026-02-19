@@ -34,8 +34,7 @@ They were evaluated on:
 - ADNI (public), N=11,007
 - APOE 1.0 & APOE 2.0 (private), N=2,100
 
-Note: Private datasets are not distributed with this repository.
-
+Note: Ten sample scans from IXI dataset is included for testing the model, the entire dataset can be downloaded at: https://brain-development.org/ixi-dataset/
 ---
 
 ## Preprocessing (FreeSurfer)
@@ -57,17 +56,17 @@ Skull extraction saves a skull-only volume to disk, which is then used for Skull
 This package was implemented and tested with Python 3.11.
 
 Option A — Install directly from GitHub (recommended)
-
+```
 pip install git+https://github.com/<ORG_OR_USER>/<REPO>.git
-
+```
 Option B — Install from requirements.txt
-
+```
 pip install -r requirements.txt
-
+```
 Option C — Install via setup.py
-
+```
 python3 setup.py
-
+```
 Tip: Use a virtual environment (venv/conda) to avoid dependency conflicts.
 
 ---
@@ -76,25 +75,27 @@ Tip: Use a virtual environment (venv/conda) to avoid dependency conflicts.
 
 The commands below run inference on the included sample CSV input lists (IXI).
 Each command selects the corresponding model and writes prediction results to the output folder.
-
+```
 python3 -u AgePredication_Final.py \
   --inList "IXI_Head_Scan_Age--Input_List.csv" \
   --model "HeadAge" \
   --ext "nii.gz" \
   --out "IXI_Head_Scan_Age_predication_results"
-
+```
+```
 python3 -u AgePredication_Final.py \
   --inList "IXI_Brain_Scan_Age--Input_List.csv" \
   --model "BrainAge" \
   --ext "nii.gz" \
   --out "IXI_Brain_Scan_Age_predication_results"
-
+```
+```
 python3 -u AgePredication_Final.py \
   --inList "IXI_Skull_Scan_Age--Input_List.csv" \
   --model "SkullAge" \
   --ext "nii.gz" \
   --out "IXI_Skull_Scan_Age_predication_results"
-
+```
 Notes on inputs:
 - The input CSV format is demonstrated in the included IXI_*_Input_List.csv files.
 - --ext should match your scan file extension (e.g., nii.gz).
@@ -110,14 +111,7 @@ python3 Extract_Skull.py --head nu.mgz --mask brain.mgz --out result
 Arguments:
 - --head: path to nu.mgz (FreeSurfer output)
 - --mask: path to brain.mgz (FreeSurfer output)
-- --out: output path/prefix for the extracted skull volume
-
----
-
-## Output
-
-The inference script writes results to the directory specified by --out.
-See the output folder for prediction files/logs created by the run.
+- --out: name prefix for saving the extracted skull volume
 
 ---
 
@@ -125,12 +119,6 @@ See the output folder for prediction files/logs created by the run.
 
 - Wrong model / wrong image type: results may look unstable or incorrect. Double-check --model matches your data type.
 - FreeSurfer files missing: HeadAge/BrainAge/SkullAge pipelines assume FreeSurfer outputs exist and are correctly generated.
-- Dependency conflicts: use a clean environment:
-
-  python -m venv .venv
-  source .venv/bin/activate   # macOS/Linux
-  # .venv\Scripts\activate    # Windows
-  pip install -r requirements.txt
 
 ---
 
@@ -141,13 +129,6 @@ If you use this repository in academic work, please cite:
 Sohankar, J. HBS-AgeNet (HeadBrainSkull-AgeNet): Predicting chronological age from T1-weighted MRI using head, brain, and skull models. (GitHub repository).
 
 (Add a paper/preprint citation here if/when available.)
-
----
-
-## License
-
-Specify your license here (e.g., MIT, Apache-2.0, or custom academic license).
-If you already have a LICENSE file, this section can simply reference it.
 
 ---
 
