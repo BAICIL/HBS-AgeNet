@@ -97,6 +97,7 @@ python3 -u AgePredication_Final.py \
   --out "IXI_Skull_Scan_Age_predication_results"
 ```
 Notes on inputs:
+- The model accepts four type of scan extensions (np, nii, nii.gz, mgz), but in each run use only one type.
 - The input CSV format is demonstrated in the included IXI_*_Input_List.csv files.
 - --ext should match your scan file extension (e.g., nii.gz).
 
