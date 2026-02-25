@@ -129,8 +129,6 @@ If you use this repository in academic work, please cite:
 
 Sohankar, J. HBS-AgeNet (HeadBrainSkull-AgeNet): Predicting chronological age from T1-weighted MRI using head, brain, and skull models. (GitHub repository).
 
-(Add a paper/preprint citation here if/when available.)
-
 ---
 
 ## Contact
