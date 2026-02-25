@@ -125,8 +125,22 @@ Arguments:
 
 ## Citation
 
-If you use this repository in academic work, please cite:
+If you use this repository in academic work, please cite the paper (and github repo):
 
+### Paper
+
+APA:
+Li, Y., Sohankar, J., Luo, J., Li, J., & Su, Y. (2025). BrainPath: A Biologically-Informed AI Framework for Individualized Aging Brain Generation. arXiv preprint arXiv:2508.16667.
+
+Bibtex:
+@article{li2025brainpath,
+  title={BrainPath: A Biologically-Informed AI Framework for Individualized Aging Brain Generation},
+  author={Li, Yifan and Sohankar, Javad and Luo, Ji and Li, Jing and Su, Yi},
+  journal={arXiv preprint arXiv:2508.16667},
+  year={2025}
+}
+
+### gihub repo:
 Sohankar, J. HBS-AgeNet (HeadBrainSkull-AgeNet): Predicting chronological age from T1-weighted MRI using head, brain, and skull models. (GitHub repository).
 
 ---
