@@ -106,9 +106,9 @@ Notes on inputs:
 ## Skull Extraction (for SkullAge)
 
 To generate skull-only volumes for your own data:
-
+```
 python3 Extract_Skull.py --head nu.mgz --mask brain.mgz --out result
-
+```
 Arguments:
 - --head: path to nu.mgz (FreeSurfer output)
 - --mask: path to brain.mgz (FreeSurfer output)
