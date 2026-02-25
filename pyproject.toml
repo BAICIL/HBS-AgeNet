@@ -1,11 +1,12 @@
 [project]
-name = "DeepMRIAge"
+name = "HBS-AgeNet"
 version = "0.1.0"
 description = "Predicting Chronological Age based on 3D Brain MRI Images using Deep Learning models (utilizing ResNet18 architecture)"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "CC BY-NC 4.0"}
 dependencies = [
+    "matplotlib>=3.10.8",
     "monai>=1.5.2",
     "nibabel>=5.3.3",
     "pandas>=3.0.0",
@@ -16,6 +17,6 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/BAICIL/AgePredication"
+Homepage = "https://github.com/BAICIL/HBS-AgeNet"
 Repository = "https://github.com"
 Issues = "https://github.com"
