@@ -57,7 +57,7 @@ This package was implemented and tested with Python 3.11.
 
 Option A — Install directly from GitHub (recommended)
 ```
-pip install git+https://github.com/<ORG_OR_USER>/<REPO>.git
+pip install git+https://github.com/BAICIL/HBS-AgeNet
 ```
 Option B — Install from requirements.txt
 ```
